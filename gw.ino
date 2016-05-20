@@ -105,6 +105,7 @@ void setup()
 
 
   // Send startup log message on serial
+  serial(PSTR("gw grg current channel: %d \n"),  RF24_CHANNEL);
   serial(PSTR("0;0;%d;0;%d;Gateway startup complete.\n"),  C_INTERNAL, I_GATEWAY_READY);
 }
 
